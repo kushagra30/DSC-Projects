@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- this is used for making this web page work prperly in small screens -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+    /* cssis done for the whole web page */
+    /* this is for the h1 tag */
+
+      .css
+    {
+        font-size: 30px;
+        text-align: center;
+        
+        
+    }
+    body {
+         background: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+    }
+    
+/*for input fields*/
+
+input[type=text], input[type=password] {
+    width: 25%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {/*for ll the buttons used in web page*/
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 25px ;
+    margin: 8px 70px;
+    border: none;
+    cursor: pointer;
+    width: auto;
+    border-radius: 15px 15px 15px 15px;
+        display: inline-block;
+    
+}
+    
+    
+button:hover {
+    opacity: 0.8;
+    background: violet;
+}
+    @media screen and (max-width: 300px) {
+        .button{
+            width: auto;
+        }
+    }
+
+
+.imgbox {/*css for the div in which the image is contained*/
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+img.k {/*css for image*/
+    height: 150px;
+    width: 150px;
+    border-radius: 80%;
+}
+
+.inner{
+    text-align: center;
+}
+
+.password {
+    
+    padding-left: 80px;
+    font-size: 20px;
+}
+a
+    {
+        text-decoration: none;
+          color: white;
+    }
+    a.kush{
+        text-decoration:underline;
+        color:blue;
+    }
+   /*for sign up button*/
+    a.button{
+         background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+         border-radius: 15px 15px 15px 15px;
+    }
+    a.button:hover{
+        opacity: 0.8;
+    background: violet;
+        
+        }
+    
+
+    p{
+        font-size: 20px;
+    }
+    
+</style>
+</head>
+<body>
+
+    <h1 class="css">Welcome to home page!!!</h1>
+
+<form >
+  <div class="imgbox">
+    <img src="k.png" alt="k" class="k">
+  </div>
+
+  <div class="inner">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username/Email" name="uname" required><br>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required><br>
+        <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+    <button type="submit">Login</button><br>
+       
+      <div class="password"><a class ="kush" href="#">Forgot Password?</a></div >
+      <p>For Creating A New Account</p>
+       <a  href="signup.html" class="button">Sign up</a>
+  
+  </div>
+
+    
+</form>
+
+</body>
+</html>
